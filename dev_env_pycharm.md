@@ -16,7 +16,25 @@ or you can download from he following link [Download Pycharm](https://www.jetbra
 sudo chmod -R 777 /opt/odoo16/
 ```
 
-change odoo.conf settings `/odoo/debian/odoo.conf`
+3. After Pycharm opened Select File > Open.   then select the Project location /opt/odoo16
+
+4. Add a configuration for the project as follows:
+
+open settings ![](images/settings.png)
+
+confiugre Interpreter. select odoo16-venv. If you don't see at the options that needs to be added. browse the location /opt/odoo16/odoo16-venv/bin/python  
+![](images/configure_interpreter.png)
+
+open Run Configuraitons: 
+![](images/open_run_configuration.png)
+
+Configure as follows:
+![](images/run_configurations.png)
+
+
+
+
+change odoo.conf settings `/etc/odoo.conf`
 
 ```sh
 [options]
